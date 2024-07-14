@@ -1,0 +1,9 @@
+name: fastapi-image-upscaler
+services:
+  - name: web
+    instance_type: free
+    ports:
+      - port: 8000
+        http_options:
+          rewrite_http_to_https: true
+    dockerfile: Dockerfile
